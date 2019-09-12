@@ -23,12 +23,10 @@
 
 
 while 1:
-    nm = list(map(int, input() .split(' ')) )
+    nm = list(map(int, input().split(' ')) )
     n = nm[0]
     m = nm[1]
     A = list(map(int, input().split(' ')))
     B = list(map(int, input().split(' ')))
-    res = []
-    res = set(A+B)
-    print(' '.join(str(i) for i in sorted(res)))
+    print(' '.join(str(i) for i in sorted(set(A+B))))
           
